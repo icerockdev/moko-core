@@ -29,3 +29,14 @@ androidExtensions {
 dependencies {
     mppLibrary(Deps.Libs.MultiPlatform.kotlinStdLib)
 }
+
+publishing {
+    repositories.maven("https://api.bintray.com/maven/icerockdev/moko/moko-core/;publish=1") {
+        name = "bintray"
+
+        credentials {
+            username = System.getProperty("BINTRAY_USER")
+            password = System.getProperty("BINTRAY_KEY")
+        }
+    }
+}
