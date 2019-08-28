@@ -1,11 +1,18 @@
+import java.net.URI
+
 plugins {
     `kotlin-dsl`
 }
 
 repositories {
     mavenLocal()
+
     jcenter()
     google()
+
+    maven {
+        url = URI("https://icerockdev.bintray.com/moko")
+    }
 }
 
 dependencies {
