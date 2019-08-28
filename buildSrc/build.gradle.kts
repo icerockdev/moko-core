@@ -10,9 +10,7 @@ repositories {
     jcenter()
     google()
 
-    maven {
-        url = URI("https://icerockdev.bintray.com/moko")
-    }
+    maven { url = URI("https://dl.bintray.com/icerockdev/plugins") }
 }
 
 dependencies {
