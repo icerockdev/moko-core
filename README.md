@@ -114,9 +114,10 @@ val argb: Long = red.argb // android compatible
 ## Samples
 More examples can be found in the [sample directory](sample).
 
-## Set Up Locally
-- clone project
-- use `:core:publishToMavenLocal` gradle task in development process with sample project
+## Set Up Locally 
+- In [core directory](core) contains `core` library;
+- In [sample directory](sample) contains samples on android, ios & mpp-library connected to apps;
+- For test changes locally use `:core:publishToMavenLocal` gradle task, after it samples will use locally published version.
 
 ## Contributing
 All development (both new features and bug fixes) is performed in `develop` branch. This way `master` sources always contain sources of the most recently released version. Please send PRs with bug fixes to `develop` branch. Fixes to documentation in markdown files are an exception to this rule. They are updated directly in `master`.
