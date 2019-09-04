@@ -6,11 +6,12 @@ Note: core library is in the process of breaking up into specialized modules. La
 
 ## Table of Contents
 - [Features](#features)
+- [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Samples](#samples)
 - [Set Up Locally](#setup-locally)
 - [Contributing](#contributing)
-- [Buy us a coffee](#donations)
 - [License](#license)
 
 ## Features
