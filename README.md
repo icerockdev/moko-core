@@ -1,5 +1,5 @@
 ![moko-core](img/logo.png)  
-[![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0) [![Download](https://api.bintray.com/packages/icerockdev/moko/moko-core/images/download.svg) ](https://bintray.com/icerockdev/moko/moko-core/_latestVersion)
+[![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0) [![Download](https://api.bintray.com/packages/icerockdev/moko/moko-core/images/download.svg) ](https://bintray.com/icerockdev/moko/moko-core/_latestVersion) ![kotlin-version](https://img.shields.io/badge/kotlin-1.3.50-orange)
 
 # Mobile Kotlin core
 This is a Kotlin Multiplatform library that supports Parcelize, time and color in common code.  
@@ -8,6 +8,7 @@ Note: the core library is currently being split into specialized modules, and it
 ## Table of Contents
 - [Features](#features)
 - [Requirements](#requirements)
+- [Versions](#versions)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Samples](#samples)
@@ -25,6 +26,10 @@ Note: the core library is currently being split into specialized modules, and it
 - Gradle version 5.4.1+
 - Android API 21+
 - iOS version 9.0+
+
+## Versions
+- kotlin 1.3.50
+  - 0.1.0
 
 ## Installation
 root build.gradle  
