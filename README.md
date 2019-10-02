@@ -2,8 +2,8 @@
 [![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0) [![Download](https://api.bintray.com/packages/icerockdev/moko/moko-core/images/download.svg) ](https://bintray.com/icerockdev/moko/moko-core/_latestVersion)
 
 # Mobile Kotlin core
-This is a Kotlin MultiPlatform library allowing use Parcelize, time & color in common code.  
-Note: core library is in the process of breaking up into specialized modules. Later all functional will be in separated libraries with specific goals.
+This is a Kotlin Multiplatform library that supports Parcelize, time and color in common code.  
+Note: the core library is currently being split into specialized modules, and it's functional will soon become available in separate libraries optimized for specific development goals.
 
 ## Table of Contents
 - [Features](#features)
@@ -16,10 +16,10 @@ Note: core library is in the process of breaking up into specialized modules. La
 - [License](#license)
 
 ## Features
-- **Parcelize** in common code (special for Android target);
+- **Parcelize** in common code (specially for Android target);
 - **Timer** for recurrent/delayed operations;
 - **getCurrentMilliSeconds** in common code;
-- **Color** with convertation to platform side requirements (argb/rgba).
+- **Color** converting according to the platform-side requirements (argb/rgba).
 
 ## Requirements
 - Gradle version 5.4.1+
@@ -59,7 +59,7 @@ androidExtensions {
 }
 ```
 
-Mark common code classes with annotation `@Parcelize` just like in android code for automatically generated `Parcelable` implementation.
+Mark common code classes with the annotation `@Parcelize` like in the Android code for automatically generated `Parcelable` implementation.
 ```kotlin
 @Parcelize
 data class User(
@@ -69,7 +69,7 @@ data class User(
 ```
 
 ### Timer
-Create timer for repeating operation:
+Create the timer for a recurring operation:
 ```kotlin
 var iteration = 0
 val timer = Timer(intervalMilliSeconds = 5000) {
@@ -83,7 +83,7 @@ timer.start() // call block after intervalMilliSeconds
 timer.stop() // manually stop repeating timer
 ```
 
-Create timer for single run (delayed operation):
+Create the timer for a single run (a delayed operation):
 ```kotlin
 val timer = Timer(intervalMilliSeconds = 5000) {
     println("printed after 5 seconds")
@@ -113,23 +113,23 @@ val argb: Long = red.argb // android compatible
 ```
 
 ## Samples
-More examples can be found in the [sample directory](sample).
+Please see more examples in the [sample directory](sample).
 
 ## Set Up Locally 
-- In [core directory](core) contains `core` library;
-- In [sample directory](sample) contains samples on android, ios & mpp-library connected to apps;
-- For test changes locally use `:core:publishToMavenLocal` gradle task, after it samples will use locally published version.
+- The [core directory](core) contains the `core` library;
+- The [sample directory](sample) contains sample apps for Android and iOS; plus the mpp-library connected to the apps;
+- For local testing use the `:core:publishToMavenLocal` gradle task - so that sample apps use the locally published version.
 
 ## Contributing
-All development (both new features and bug fixes) is performed in `develop` branch. This way `master` sources always contain sources of the most recently released version. Please send PRs with bug fixes to `develop` branch. Fixes to documentation in markdown files are an exception to this rule. They are updated directly in `master`.
+All development (both new features and bug fixes) is performed in the `develop` branch. This way `master` always contains the sources of the most recently released version. Please send PRs with bug fixes to the `develop` branch. Documentation fixes in the markdown files are an exception to this rule. They are updated directly in `master`.
 
-The `develop` branch is pushed to `master` during release.
+The `develop` branch is pushed to `master` on release.
 
-More detailed guide for contributers see in [contributing guide](CONTRIBUTING.md).
+For more details on contributing please see the [contributing guide](CONTRIBUTING.md).
 
 ## License
         
-    Copyright 2019 IceRock MAG Inc
+    Copyright 2019 IceRock MAG Inc.
     
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
